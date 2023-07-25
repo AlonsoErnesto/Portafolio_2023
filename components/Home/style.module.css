@@ -1,0 +1,67 @@
+.wrapper {
+   display: flex;
+   align-items: center;
+   width: 95%;
+   padding-left: 5%;
+   height: 100vh;
+}
+
+.wrapper_title {
+   width: 50%;
+   height: auto;
+}
+
+.wrapper_title > * {
+   font-family: San_Francisco_Light;
+   color: rgb(211, 211, 211);
+   font-weight: bold;
+   font-size: 130px;
+   line-height: 110px;
+   text-shadow: -5px 5px 8px rgba(0,0,0,0.47);
+}
+
+.description {
+   font-family: San_Francisco_Light;
+   font-weight: bold;
+   font-size: 40px;
+   color:#abaaaa;
+   text-shadow: none;
+}
+
+.wrapper_rigth {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50%;
+   height: 100%;
+}
+
+.profile {
+   width: 50%;
+   padding: 30px;
+   height: auto;
+   border: 3px solid #043474;
+   border-radius: 15px;
+   background-color: rgb(7, 42, 65);
+}
+
+.text {
+   font-weight: San_Francisco_Italic;
+   font-weight: bold;
+   font-size: 24px;
+   color: white;
+}
+
+
+
+.rocket {
+	top: 43%;
+	left: 44%;
+}
+
+#axis:hover .move-up {
+	transform: translate(0,-350px);
+	-webkit-transform: translate(0,-350px);
+	-o-transform: translate(0,-350px); 
+	-moz-transform: translate(0,-350px);
+}

@@ -1,0 +1,21 @@
+.navbar {
+   display: flex;
+   justify-content: center;
+}
+
+.bar {
+   display: flex;
+   position: fixed;
+   justify-content: space-around;
+   width: 45%;
+   bottom: 0;  
+   border-radius: 50px;
+   margin-bottom: 3vh;
+   background-color: rgb(7, 42, 65);
+   border: 3px solid #043474;
+}
+
+.navbar_title {
+   font-size: 12px;
+   padding-block: 10px;
+}
