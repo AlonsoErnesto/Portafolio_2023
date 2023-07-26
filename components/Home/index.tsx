@@ -1,4 +1,5 @@
 import { Marquee } from '../Marquee';
+import { Telegram } from '@styled-icons/bootstrap/Telegram';
 import styles from './style.module.css';
 
 export const Home = () => {
@@ -7,16 +8,14 @@ export const Home = () => {
          <Marquee/>
          <div className={styles.wrapper}>
             <div className={styles.wrapper_title}>
-               <p>Ernesto</p>
-               <p>Mamani</p>
-               <p className={styles.description}>Junior Full Stack developer</p>
-            M</div>
-            <div className={styles.wrapper_rigth}>
-               <div className={styles.profile}>
-                  <p className={styles.text}>
-                     Desarrollador de Software con más de 2 años de experiencia.
-                     Desarrollando proyectos empresariales, bancarios y scripting.
-                  </p>
+               <h1>Desarrollador WEB Full Stack</h1>
+               <p className={styles.description}> Mamani Ernesto Alonso</p>
+               <div className={styles.contain_btn}>
+                  <button className={styles.btn_contact}>
+                     <span>
+                        Contactar <Telegram className={styles.icon_btn} size={24} color="#ffffff"/>
+                     </span>
+                  </button>
                </div>
             </div>
          </div>

@@ -1,48 +1,48 @@
 .wrapper {
    display: flex;
    align-items: center;
-   width: 95%;
-   padding-left: 5%;
+   justify-content: center;
+   width: 100%;
    height: 100vh;
 }
 
 .wrapper_title {
    width: 50%;
-   height: auto;
 }
 
-.wrapper_title > * {
+.wrapper_title > h1 {
    font-family: San_Francisco_Light;
    color: rgb(211, 211, 211);
    font-weight: bold;
-   font-size: 130px;
-   line-height: 110px;
+   font-size: 50px;
+   text-align: center;
+   line-height: 80px;
    text-shadow: -5px 5px 8px rgba(0,0,0,0.47);
 }
 
 .description {
    font-family: San_Francisco_Light;
    font-weight: bold;
-   font-size: 40px;
+   text-align: center;
+   font-size: 30px;
    color:#abaaaa;
    text-shadow: none;
 }
 
-.wrapper_rigth {
+.contain_btn {
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 50%;
-   height: 100%;
 }
 
-.profile {
-   width: 50%;
-   padding: 30px;
-   height: auto;
-   border: 3px solid #043474;
-   border-radius: 15px;
-   background-color: rgb(7, 42, 65);
+.btn_contact > span {
+   position: relative;
+}
+.icon_btn {
+   position: absolute;
+   right: 0;
+   margin-top: 5px;
+   margin-right: 15px;
 }
 
 .text {
@@ -52,16 +52,34 @@
    color: white;
 }
 
+/* -----ANIMATED ---BTN-COLOR----------- */
 
-
-.rocket {
-	top: 43%;
-	left: 44%;
+.btn_contact {
+   display: grid;
+   align-items: center;
+   font-size: 24px;
+   color:white;
+   margin-top: 30px;
+   background-color: var(--btn-color);
+   border:none;
+   width: 40%;
+   cursor: pointer;
+   border-radius: 10px;
+   border:3px solid var(--border-color);
+   height: 50px;
+}
+.btn_contact:hover {
+   box-shadow: 1px 1px 30px var(--border-color);
+   background-color: var(--border-color); 
+   font-weight: bold;
+   color: black;
+   transition: all 500ms ease;
 }
 
-#axis:hover .move-up {
-	transform: translate(0,-350px);
-	-webkit-transform: translate(0,-350px);
-	-o-transform: translate(0,-350px); 
-	-moz-transform: translate(0,-350px);
+.btn_contact:not(:hover) {
+   transition: all 500ms ease;
+
 }
+
+
+

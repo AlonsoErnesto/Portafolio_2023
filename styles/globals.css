@@ -1,3 +1,14 @@
+:root {
+  --bg-color:#11151C;
+  --color-primary: #212D40;
+  --color-secondary:#364156;
+  --btn-color:#364156;
+  --border-color:#79C7C5;
+  --shadow-color:#ADE1E5;
+  --bg-img:rgba(7, 42, 65,.5);
+}
+
+
 @font-face {
   font-family: San_Francisco;
   src: url(../public/fonts/San_Francisco/SFProDisplay-Medium.ttf);
@@ -23,5 +34,21 @@
   
 }
 body {
-  background-color: rgb(3, 29, 46);
+  background-color:  var(--bg-color);
 }
+
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+body::-webkit-scrollbar-track {
+  background-color: var(--color-primary);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 10px;
+}
+
+
+
+

@@ -44,9 +44,9 @@ export const Marquee: React.FC = () => {
           <div className={styles.slide}>
             <p>POSTGRESQL</p>
           </div>
-          <div className={styles.slide}>
-            <p>FIREBAES</p>
-          </div>
+          {/* <div className={styles.slide}>
+            <p>FIREBASE</p>
+          </div> */}
       </div>
   </div>
   );

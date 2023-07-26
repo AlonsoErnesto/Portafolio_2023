@@ -8,22 +8,22 @@ export const Navbar = () => {
       <div className={styles.navbar}>
          <div className={styles.bar}>
             <span className={styles.navbar_title}>
-               <HomeAlt size={35} color="#ffffff"/>
+               <HomeAlt className={styles.icon} size={35} />
             </span>
             <span className={styles.navbar_title}>
-               <UserCircle size={35} color="#ffffff"/>
+               <UserCircle className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <CodeCurly size={35} color="#ffffff"/>
+               <CodeCurly className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <WorkOutline size={35} color="#ffffff"/>
+               <WorkOutline className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <Whatsapp size={35} color="#ffffff"/>
+               <Whatsapp className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <Moon size={35} color="#ffffff"/>
+               <Moon className={styles.icon} size={35} color="#ffffff"/>
             </span>
          </div>
       </div>
