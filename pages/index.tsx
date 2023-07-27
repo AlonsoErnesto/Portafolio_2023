@@ -1,4 +1,4 @@
-import { Home, Navbar, Perfil } from '../components';
+import { Home, Navbar, Perfil, Skills } from '../components';
 
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Perfil/>
+      <Skills/>
     </div>
   )
 };

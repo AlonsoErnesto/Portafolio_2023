@@ -1,0 +1,40 @@
+.wrapper {
+   position: relative;
+   height: 100vh;
+   width: 100%;
+}
+
+.title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   width: 100%;
+   height: 10%;
+}
+
+.title > h1 {
+   font-size: 55px;
+}
+
+.list_card {
+   display: flex;
+   align-items: center;
+   align-items: center;
+   width: 100%;
+   height: 90%;
+   background-color: blue;
+}
+
+.contain {
+   background-color: red;
+   width: 100%;
+   height: 50%;
+}
+
+.card {
+   width: 30%;
+
+   background-color: green;
+}
+

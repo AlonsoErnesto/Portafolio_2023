@@ -7,14 +7,14 @@
 }
 
 .wrapper_title {
-   width: 50%;
+   width: 70%;
 }
 
 .wrapper_title > h1 {
    font-family: San_Francisco_Light;
    color: rgb(211, 211, 211);
    font-weight: bold;
-   font-size: 50px;
+   font-size: 70px;
    text-align: center;
    line-height: 80px;
    text-shadow: -5px 5px 8px rgba(0,0,0,0.47);
