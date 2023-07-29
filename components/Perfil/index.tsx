@@ -43,7 +43,7 @@ export const Perfil:React.FC = () => {
                   <br/>
                   <div className={styles.txt_col}>
                      <h2>+3</h2>
-                     <p>Empresas Tech trabajanod como Desarrollador BackEnd, FrontEnd asi como Full Stack  </p>
+                     <p>Empresas Tech trabajando como Desarrollador BackEnd y FrontEnd.  </p>
                   </div>
                </div>
                <div className={styles.photo}>

@@ -1,4 +1,4 @@
-.wrapper {
+.wrapper_skills {
    position: relative;
    height: 100vh;
    width: 100%;
@@ -25,22 +25,65 @@
    height: 90%;
 }
 
-.contain {
+.contenedor {
    width: 100%;
-   height: 80%;
+   height: 60%;
 }
 
 .swiper_container {
    width: 100%;
    height: 100%;
-   background-color: white;
-}
-.item {
-   color: white;
-   position: relative;
-   width: 300px;
    padding: 20px;
-   height: 300px;
+}
+.custom-slide {
+   background-color: var(--bg-color);
+   max-width: 45%;
+   color: white;
+   border: 2px solid var(--border-color);
    border-radius: 20px;
-   background-color: green;
+   padding: 30px;
+   background: rgba(147, 157, 227, 0.16);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(7.1px);
+   -webkit-backdrop-filter: blur(7.1px);
+   
+}
+
+.title_card {
+   display: grid;
+   height: 46%;
+   align-items: center;
+   justify-content: center;
+}
+
+.title_card > h1{
+   text-align: center;
+   font-size: 44px;
+}
+
+.title_card > p {
+   font-size: 20px;
+   margin-left: 10%;
+   width: 80%;
+   text-align: center;
+}
+
+.list_icons {
+   display: flex;
+   height: 46%;
+   align-items: center;
+   justify-content: space-evenly;   
+}
+
+.list_icons > span > p {
+   font-weight: bold;
+   text-align: center;
+}
+
+.nivel{
+   position: relative;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 10px;
 }
