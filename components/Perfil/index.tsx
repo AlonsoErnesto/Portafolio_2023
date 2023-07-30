@@ -29,6 +29,9 @@ export const Perfil:React.FC = () => {
             <h1 className={styles.title}>Sobre mi</h1>   
          </div>
          <div  className={styles['wrapper']}>
+            <video className={styles.videoBG} autoPlay muted loop>
+               <source src="./assets/videos/bg1.webm" type="video/webm" />
+            </video>
             <div className={styles.content}>
                <div className={styles.description}>
                   <div className={styles.txt_col}>

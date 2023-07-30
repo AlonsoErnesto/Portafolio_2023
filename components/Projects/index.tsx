@@ -1,74 +1,97 @@
 import styles from './styles.module.css';
+import Link from 'next/link'
 
 export const Projects = () => {
 
    const projects = [ 
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
-         "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "id":'1',
+         "nombre":'CENASA',
+         "Tipo":'Empleo',
+         "Date":'2023-2023',
+         "Puesto":'Desarrollador ReactJS y Nodejs',
+         "page":'cenasa'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
-         "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "id":'2',
+         "nombre":'Airbnb Clone',
+         "Tipo":'Projecto',
+         "Date":'2022-2023',
+         "Puesto":'ReactJS NestJS MongoDB',
+         "page":'airbnb-clone'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
-         "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "id":'3',
+         "nombre":'FREELANCE',
+         "Tipo":'Empleo',
+         "Date":'2022-2023',
+         "Puesto":'Desarrollador WEB FullStack',
+         "page":'freelance'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
-         "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "id":'4',
+         "nombre":'Facebook Clone',
+         "Tipo":'Projecto',
+         "Date":'2022-2022',
+         "Puesto":'ReactJS, Express, MongoDB',
+         "page":'facebook-clone'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
+         "id":'5',
+         "nombre":'EXPONENTIA',
+         "Tipo":'Empleo',
          "Date":'2021-2022',
          "Puesto":'Desarrollador Typescript Junior',
+         "page":'exponentia'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
+         "id":'6',
+         "nombre":'Portafolio',
+         "Tipo":'Projecto',
          "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "Puesto":'NextJS - Typescript - CSS',
+         "page":'portafolio'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
-         "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "id":'7',
+         "nombre":'SO-ArchTools',
+         "Tipo":'Stack-Tools',
+         "Date":'2022',
+         "Puesto":'ArchLinux Nvim Tmux Kitty Fish',
+         "page":'tools-arch'
       },
       {
-         "Nombre":'Exponentia',
-         "Tipo":'Trabajo',
+         "id":'8',
+         "nombre":'RestaurantGO - TESIS',
+         "Tipo":'Projecto',
          "Date":'2021-2022',
-         "Puesto":'Desarrollador Typescript Junior',
+         "Puesto":'React-Native Firebase GoogleAPI',
+         "page":'restaurant-go',
       }
    ];
 
    return (
       <div className={styles.wrapper}>
          <div className={styles.title_contain}>
-            <h3>Works & Projects</h3>
+            <h3>Experiencia</h3>
          </div>
          <div className={styles.content}>
             <div className={styles.list_works}>
-               { projects.map((item) => (
-                  <div className={styles.item}>
-                     <h3>{item.Nombre}</h3>
-                     <p>{item.Puesto}</p>
+               { projects.map(({Puesto,id,nombre,Date,Tipo,page}) => (
+                  <Link href={`/experience/${page}`} style={{textDecoration:'none'}}>
+                  <div className={styles.item} key={id}>
+                     <h3>{nombre}</h3>
+                     <p>{Puesto}</p>
                      <div>
-                        <time dateTime={item.Date}>{item.Date}</time>
+                        <time dateTime={Date}>{Date}</time>
                      </div>
-                     <span>{item.Tipo}</span>
+                     { Tipo === 'Projecto' ? (
+                        <span style={{background:'#D4AC0D'}}>{Tipo}</span>
+                     ) : (
+                        <span>{Tipo}</span>
+                     )}
                   </div>
+                  </Link>
                ))}
             </div>
          </div>

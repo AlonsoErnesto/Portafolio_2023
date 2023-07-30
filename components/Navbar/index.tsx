@@ -1,6 +1,7 @@
-import { UserCircle, HomeAlt, CodeCurly, Moon } from '@styled-icons/boxicons-regular';
+import { UserCircle, HomeAlt, CodeCurly } from '@styled-icons/boxicons-regular';
 import { Whatsapp } from '@styled-icons/boxicons-logos/Whatsapp';
 import { WorkOutline } from '@styled-icons/material/WorkOutline';
+import { School } from '@styled-icons/ionicons-outline/School';
 import styles from './style.module.css';
 
 export const Navbar = () => {
@@ -20,10 +21,10 @@ export const Navbar = () => {
                <WorkOutline className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <Whatsapp className={styles.icon} size={35} color="#ffffff"/>
+               <School className={styles.icon} size={35} color="#ffffff"/>
             </span>
             <span className={styles.navbar_title}>
-               <Moon className={styles.icon} size={35} color="#ffffff"/>
+               <Whatsapp className={styles.icon} size={35} color="#ffffff"/>
             </span>
          </div>
       </div>

@@ -8,8 +8,10 @@ export const Home = () => {
          <Marquee/>
          <div className={styles.wrapper}>
             <div className={styles.wrapper_title}>
-               <h1>Desarrollador WEB Full Stack</h1>
-               <p className={styles.description}> Mamani Ernesto Alonso</p>
+               <div className={styles.text_style}>
+                  <h1>Desarrollador WEB Full Stack</h1>
+               </div>
+                  <p className={styles.description}> Mamani Ernesto Alonso</p>
                <div className={styles.contain_btn}>
                   <button className={styles.btn_contact}>
                      <span>

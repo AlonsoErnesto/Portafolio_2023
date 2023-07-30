@@ -48,8 +48,8 @@ export const Skills = () => {
       effect: 'coverflow',
       centeredSlides: true,
       loop: true,
-      autoplay:{ delay: 5000 },
-      speed:2000,
+      autoplay:{ delay: 3000 },
+      speed:1500,
       slidesPerView: 'auto', 
       spaceBetween: '10%',
       coverflowEffect: {
