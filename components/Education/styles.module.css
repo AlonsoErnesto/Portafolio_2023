@@ -22,12 +22,43 @@
 
 .education {
    position: relative;
+   display: flex;
+   grid-column: 50% 50%;
+   justify-content: space-evenly;
+
    border-radius: 10px;
-   padding: 20px;
    width: 60%; 
    height: 80%;
    background-color: var(--color-primary);
    border: 2px solid var(--border-color) ;
    color:white;
+   overflow: hidden;
 }
 
+.info {
+   position: relative;
+   display: grid;
+   place-items: center;
+   width: 100%;
+}
+
+.info > h1 {
+   font-size: 34px;
+}
+
+.info > p {
+   margin-top: -20px;
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+}
+.logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 40%;
+}
+.logo > img {
+   position: absolute;
+   width: 25%;
+}
