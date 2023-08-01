@@ -1,6 +1,10 @@
+import React from 'react';
 import styles from './styles.module.css';
 
-export const Education = () => {
+export const Education:React.FC = () => {
+
+
+
    return (
       <div className={styles.wrapper}>
          <div className={styles.title_div}>
@@ -16,12 +20,12 @@ export const Education = () => {
                      </p>
                </div>
                <div className={styles.logo}>
-                  <img src="./assets/images/education/upc.png"/>
+                  <img style={{width:'30%', position:'absolute'}} src="./assets/images/education/upc.webp"/>
                </div>
             </div>
             <div className={styles.education}>
                <div className={styles.info}>
-                  <h1>Desarrollo WEB Full Stack</h1>
+                  <h1>Desarrollador WEB Full Stack</h1>
                   <p>
                      Intituto de Educacion Superior TECSUP <br/>
                      <span style={{fontSize:18}}>2021</span>
@@ -48,7 +52,7 @@ export const Education = () => {
                   <h1>ReactJS / Express / MongoDB</h1>
                   <p>
                      Juan Pablo de la Torre - Fernando Herrera<br/>
-                     <span style={{fontSize:18}}>2022</span>
+                     <span style={{fontSize:18}}>Udemy</span>
                   </p>
                </div>
                <div className={styles.logo}>

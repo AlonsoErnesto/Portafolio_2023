@@ -1,0 +1,24 @@
+.input_CSS {
+   padding: 10px;
+   border: 2px solid var(--border-color);
+   background-color: var(--colr-primary);
+   border-radius: 10px;
+   margin:5px ;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   outline: none;
+}
+
+.input_CSS::placeholder {
+   font-size: 18px;
+   font-weight: bold;
+   color: #b3b3b3;
+}
+
+.input_CSS:focus {
+   border: 2px solid #0fcd0b;
+   transition: all 500ms ease-in;
+}
+
+

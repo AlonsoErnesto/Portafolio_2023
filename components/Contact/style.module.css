@@ -1,0 +1,92 @@
+.wrapper {
+   position: relative;
+   height: 100vh;
+   width: 100%;
+}
+
+.title_page {
+   color: white;
+   font-size: 44px;
+   text-align: center;
+   height: 6%;
+}
+
+.container {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   height: 94%;
+}
+
+.content {
+   width: 80%;
+   height: 70%;
+   border-radius: 20px;
+   border:2px solid var(--border-color);
+   background-color: var(--color-primary);
+   padding:20px;
+   backdrop-filter: blur( 7.5px );
+   -webkit-backdrop-filter: blur( 7.5px );
+}
+.content::after {
+   position: absolute;
+   content: "";
+   width: 300px;
+   height: 300px;
+   background: #12c2e9;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   border-radius: 50%;
+   right: 0;
+   filter: blur(.3);
+   bottom: 0;
+   z-index: -2;
+   filter: blur(50px);
+}
+
+.content > h1 {
+   font-size: 35px;
+   font-weight: bold;
+   text-align: center;
+   height: 10%;
+   color: white;
+}
+
+.form {
+   display: grid;
+   width: 100%;
+   height: 90%;
+}
+
+.names , .dates {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+
+}
+
+.btn_submit {
+   background-color: #405df1;
+   color: white;
+   height: 50px;
+   font-weight: bold;
+   font-size: 18px;
+   border-radius: 10px;
+   border:2px solid var(--border-color);
+   cursor: pointer; 
+  
+}
+
+.btn_submit:hover {
+   border:2px solid #0fcd0b;
+   box-shadow: 1px 1px 20px var(--shadow-color);
+   backdrop-filter: blur( 7.5px );
+   transition: all 400ms ease;
+   backdrop-filter: blur( 7.5px );
+   -webkit-backdrop-filter: blur( 7.5px );backdrop-filter: blur( 7.5px );
+}
+
+.btn_submit:not(:hover) {
+   transition:all 400ms ease-in-out;
+}

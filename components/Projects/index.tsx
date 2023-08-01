@@ -78,8 +78,8 @@ export const Projects = () => {
          <div className={styles.content}>
             <div className={styles.list_works}>
                { projects.map(({Puesto,id,nombre,Date,Tipo,page}) => (
-                  <Link href={`/experience/${page}`} style={{textDecoration:'none'}}>
-                  <div className={styles.item} key={id}>
+                  <Link href={`/experience/${page}`} style={{textDecoration:'none'}} key={id}>
+                  <div className={styles.item}>
                      <h3>{nombre}</h3>
                      <p>{Puesto}</p>
                      <div>
