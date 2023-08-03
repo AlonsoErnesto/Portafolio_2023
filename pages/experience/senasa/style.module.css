@@ -1,0 +1,172 @@
+.pageWrapper {
+   position: relative;
+   width: 100%;
+   height: 250vh;
+}
+
+/* nav-content */
+.arrowNavBack {
+   width: 100%;
+   height: auto;
+   color:white;
+   text-align: center;
+   position: relative;
+   padding-top: 20px;
+}
+
+.iconRigth {
+   position: absolute;
+   left: 0;
+   margin-top : 25px;
+   margin-left : 25px;
+}
+
+.iconRigth:hover {
+   transform: translateX(-20px);
+   transition: all 400ms ease;
+}
+
+.iconRigth:not(:hover) {
+   transition: all 400ms ease-in-out;
+}
+
+
+.title {
+   font-size:120px;
+}
+
+
+.title::after {
+   content: '';
+   position: absolute;
+   width: 100%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #12c2e9;
+   transform-origin: bottom right;
+   transition: transform 0.85s ease-out;
+}
+
+
+.title:hover::after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
+
+.content { 
+   height: 90vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.topInfo {
+   width: 70%;
+   height: auto;
+   margin-top: 50px;
+   
+}
+
+.description {
+   width: 80%;
+   margin-left: 10%;
+   margin-block: 40px;
+   color: white;
+   font-size: 30px;
+   text-align: center;
+}
+
+.info { 
+   color: white;
+   padding-block:25px;
+   padding-inline: 40px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   background-color: var(--color-primary);
+   border-radius: 10px;
+   box-shadow:1px 1px 10px var(--shadow-color);
+}
+
+.text {
+   height: auto;
+   font-size: 19px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.image {
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.lineDivide {
+   margin-inline: 5%;
+   color: white;
+   width: 90%;
+   margin-block: 30px;
+}
+
+.iconsTech {
+   display: flex;
+   justify-content: space-evenly;
+
+}
+
+.cardImage {
+   background-color: var(--color-primary);
+   border-radius: 10px;
+   border: 2px solid var(--border-color);
+   width: 100%;
+   height: 50%;
+   margin-top: 30px;
+   display: grid;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+
+.cardImage > * {
+   opacity: .3;
+}
+
+.titleTask {
+   text-align: center;
+   margin-top: 15%;
+   height: 10%;
+   color:white;
+}
+
+.listCard {
+   width: 100%;
+   margin-top: 10%;
+   display: grid;
+   grid-template-columns: 48% 48%;
+   padding-top: 20px;
+   padding-left: 15px;
+   gap:20px
+}
+
+.listCard > div {
+   height: 150px;
+   width: 100%;
+   color: white;
+   background-color: var(--color-primary);
+   border: 2px solid var(--border-color);
+   padding: 20px;
+}
+
+.infoCard {
+   display: grid;
+   grid-template-columns: 25% 75%;
+}
+.infoCard > div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}

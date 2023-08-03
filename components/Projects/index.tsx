@@ -6,11 +6,11 @@ export const Projects = () => {
    const projects = [ 
       {
          "id":'1',
-         "nombre":'CENASA',
+         "nombre":'SENASA',
          "Tipo":'Empleo',
          "Date":'2023-2023',
          "Puesto":'Desarrollador ReactJS y Nodejs',
-         "page":'cenasa'
+         "page":'senasa'
       },
       {
          "id":'2',

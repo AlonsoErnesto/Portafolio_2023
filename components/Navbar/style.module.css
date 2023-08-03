@@ -30,7 +30,6 @@
 }
 
 .icon:hover {
-   background-color: #ffffff;
    filter: drop-shadow(1px 1px 10px var(--shadow-color));
    transform: scale(1.5); 
    transition: all 300ms ease;

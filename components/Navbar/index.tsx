@@ -7,7 +7,7 @@ import styles from './style.module.css';
 
 export const Navbar = () => {
 
-   const [pressnav, setPressnav] = useState(true);
+   const [pressnav, setPressnav] = useState(0);
 
    const handleScroll = (scrollValue: number) => {
       switch (scrollValue) {
@@ -16,36 +16,42 @@ export const Navbar = () => {
             top: 0,
             behavior: 'smooth',
          });
+         setPressnav(1);
          break;
       case 2:
          window.scrollTo({
             top: window.innerHeight,
             behavior: 'smooth',
          });
+         setPressnav(2);
          break;
       case 3:
          window.scrollTo({
             top: window.innerHeight * 2,
             behavior: 'smooth',
          });
+         setPressnav(3);
          break;
       case 4:
          window.scrollTo({
             top: window.innerHeight * 3,
             behavior: 'smooth',
          });
+         setPressnav(4);
          break;
       case 5:
          window.scrollTo({
             top: window.innerHeight * 4,
             behavior: 'smooth',
          });
+         setPressnav(5);
          break;
       case 6:
          window.scrollTo({
             top: window.innerHeight * 5.2,
             behavior: 'smooth',
          });
+         setPressnav(6);
          break;
       default:
          break;
@@ -56,7 +62,7 @@ export const Navbar = () => {
       <div className={styles.navbar}>
          <div className={styles.bar}>
             <span className={`${styles.navbar_title} ${styles.selected}`} onClick={() => handleScroll(1)}>
-               <HomeAlt className={styles.icon} size={35} color="#ffffff" />
+               <HomeAlt className={styles.icon} size={35} color={`${pressnav}`} />
             </span>
             <span className={styles.navbar_title} onClick={() => handleScroll(2)}>
                <UserCircle className={styles.icon} size={35} color="#ffffff"/>
