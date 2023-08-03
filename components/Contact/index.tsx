@@ -9,7 +9,7 @@ export const Contact = () => {
          </div>
          <div className={styles.container}>
             <div className={styles.content}>
-               <h1>Contactar</h1>
+               <h1>Ingrese sus datos</h1>
                <form className={styles.form}>
                   <div className={styles.names}>
                      <InputLayout type="text" id="nombre" nombre="nombre" placeholder='Nombre'/>
