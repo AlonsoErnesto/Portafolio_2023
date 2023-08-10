@@ -37,7 +37,7 @@
 }
 .custom-slide {
    background-color: var(--bg-color);
-   max-width: 45%;
+   max-width: 55%;
    color: white;
    border: 2px solid var(--border-color);
    border-radius: 20px;
@@ -47,7 +47,6 @@
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(7.1px);
    -webkit-backdrop-filter: blur(7.1px);
-   
 }
 
 .title_card {
@@ -86,4 +85,10 @@
    text-align: center;
    font-weight: bold;
    border-radius: 10px;
+}
+
+@media (max-width:850px){
+   .custom-slide {
+      max-width: 75%;
+   }
 }

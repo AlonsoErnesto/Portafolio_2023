@@ -15,7 +15,7 @@ export const Projects = () => {
       {
          "id":'2',
          "nombre":'Airbnb Clone',
-         "Tipo":'Projecto',
+         "Tipo":'Proyecto',
          "Date":'2022-2023',
          "Puesto":'ReactJS NestJS MongoDB',
          "page":'airbnb-clone'
@@ -31,7 +31,7 @@ export const Projects = () => {
       {
          "id":'4',
          "nombre":'Facebook Clone',
-         "Tipo":'Projecto',
+         "Tipo":'Proyecto',
          "Date":'2022-2022',
          "Puesto":'ReactJS, Express, MongoDB',
          "page":'facebook-clone'
@@ -47,7 +47,7 @@ export const Projects = () => {
       {
          "id":'6',
          "nombre":'Portafolio',
-         "Tipo":'Projecto',
+         "Tipo":'Proyecto',
          "Date":'2021-2022',
          "Puesto":'NextJS - Typescript - CSS',
          "page":'portafolio'
@@ -63,7 +63,7 @@ export const Projects = () => {
       {
          "id":'8',
          "nombre":'RestaurantGO - TESIS',
-         "Tipo":'Projecto',
+         "Tipo":'Proyecto',
          "Date":'2021-2022',
          "Puesto":'React-Native Firebase GoogleAPI',
          "page":'restaurant-go',
@@ -78,14 +78,14 @@ export const Projects = () => {
          <div className={styles.content}>
             <div className={styles.list_works}>
                { projects.map(({Puesto,id,nombre,Date,Tipo,page}) => (
-                  <Link href={`/experience/${page}`} style={{textDecoration:'none'}} key={id}>
+                  <Link href={`/experience/${page}`} style={{textDecoration:'none'}} key={id} className={styles.urlBtn}>
                   <div className={styles.item}>
                      <h3>{nombre}</h3>
                      <p>{Puesto}</p>
                      <div>
                         <time dateTime={Date}>{Date}</time>
                      </div>
-                     { Tipo === 'Projecto' ? (
+                     { Tipo === 'Proyecto' ? (
                         <span style={{background:'#D4AC0D'}}>{Tipo}</span>
                      ) : (
                         <span>{Tipo}</span>

@@ -20,7 +20,7 @@
    height: auto;
    bottom: 0;
    color: white;
-   padding:20px;
+   padding-bottom:30px;
    z-index: 2;
 }
 
@@ -41,7 +41,7 @@
    height: auto;
 }
 .mail_center:hover {
-   transform: scale(1.5);
+   transform: scale(1.3);
    transition: all 400ms ease;
 }
 .mail_center:not(:hover) {

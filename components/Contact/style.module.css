@@ -21,7 +21,8 @@
 }
 
 .content {
-   width: 80%;
+   position: relative;
+   width: 70%;
    height: 70%;
    border-radius: 20px;
    border:2px solid var(--border-color);
@@ -55,6 +56,7 @@
 }
 
 .form {
+   position: relative;
    display: grid;
    width: 100%;
    height: 90%;
@@ -67,7 +69,7 @@
 }
 
 .btn_submit {
-   background-color: #405df1;
+   background-color: var(--color-primary);
    color: white;
    height: 50px;
    font-weight: bold;
@@ -75,18 +77,28 @@
    border-radius: 10px;
    border:2px solid var(--border-color);
    cursor: pointer; 
-  
 }
 
 .btn_submit:hover {
    border:2px solid #0fcd0b;
-   box-shadow: 1px 1px 20px var(--shadow-color);
+   background-color: #0fcd0b;
+   box-shadow: 2px 2px 50px #0fcd0b;
    backdrop-filter: blur( 7.5px );
-   transition: all 400ms ease;
+   transition: all 500ms ease;
    backdrop-filter: blur( 7.5px );
    -webkit-backdrop-filter: blur( 7.5px );backdrop-filter: blur( 7.5px );
 }
 
 .btn_submit:not(:hover) {
-   transition:all 400ms ease-in-out;
+   transition:all 500ms ease-in-out;
+}
+
+@media (max-width:650px){
+   .content {
+      width: 90%;
+   }
+   .dates {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
 }

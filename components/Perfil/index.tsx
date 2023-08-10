@@ -28,7 +28,8 @@ export const Perfil:React.FC = () => {
          <div className={styles.title_cont}>
             <h1 className={styles.title}>Sobre mi</h1>   
          </div>
-         <div  className={styles['wrapper']}>
+         <div className={styles.bodyContent}>
+            <div  className={styles['wrapper']}>
             <video className={styles.videoBG} autoPlay muted loop>
                <source src="./assets/videos/bg1.webm" type="video/webm" />
             </video>
@@ -52,6 +53,7 @@ export const Perfil:React.FC = () => {
                <div className={styles.photo}>
                   <img src="./assets/images/profile.png"/>
                </div>
+            </div>
             </div>
          </div>
       </div>

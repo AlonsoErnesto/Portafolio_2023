@@ -23,6 +23,10 @@
 .education {
    position: relative;
    display: flex;
+   width: auto;
+   padding: 20px;
+   padding-left: 34px;
+   text-align: center;
    grid-column: 50% 50%;
    justify-content: space-evenly;
 
@@ -36,8 +40,9 @@
 }
 
 .education:hover {
-   width: 75%;
-   transition: all 500ms ease;
+   transform: scale(1.1);
+   border:2px solid #0fcd0b;
+   transition: all 300ms ease;
    cursor: pointer;
 }
 
@@ -53,6 +58,9 @@
    width: 100%;
 }
 
+.info > p {
+   padding-top: 20px;
+}
 
 .info > h1 {
    font-size: 34px;
@@ -76,5 +84,38 @@
    width: 70%;
    bottom: 10px;
    filter: opacity(0.25) drop-shadow(10px 10px 10px #000000);
+
+}
+
+
+@media (max-width:1045px){
+   .education {
+      width: 80%;
+   }
+}
+
+
+@media (max-width:800px){
+   .education {
+      width: 90%;
+   }
+}
+
+
+
+@media (max-width:685px){
+   .education {
+      width: 80%;
+   }
+   .info > h1 {
+   }
+   .info > p {
+      font-size: 21px;
+      display: none;
+   }
+
+   .education:hover {
+
+   }
 
 }

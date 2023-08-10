@@ -1,11 +1,23 @@
 .wrapper {
    display: flex;
-   align-items: center;
-   justify-content: center;
+   place-items: center;
    width: 100%;
    height: 100vh;
 }
 
+.wrapper_title {
+   width: 100%;
+   height: 30vh;
+   display: grid;
+   align-items: center;
+}
+
+.text_style {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
 
 .text_style > h1 {
    display: block;
@@ -14,9 +26,9 @@
    white-space: nowrap;
    font-weight: bold;
    font-size: 70px;
+   width: 20ch;
+   height: 80px;
    border-right: 4px solid;
-   width: 100%;
-   text-align: left;
    line-height: 80px;
    animation: typing 2s steps(30),
    blink .5s infinite step-end alternate;
@@ -31,12 +43,6 @@
    50% { border-color: transparent;}
 }
 
-.text_style:hover .hover_text {
-   width: 100%;
-   transition: all 3s ease;
-   color: white;
-}
-
 .description {
    background: linear-gradient(to right,#f64f59,#c471ed,#12c2e9);
    -webkit-background-clip : text;
@@ -44,19 +50,17 @@
    font-family: San_Francisco_Light;
    font-weight: bold;
    text-align: center;
+   width: 100%;
+   height: 50px;
    font-size: 30px;
    text-shadow: none;
 }
 
 .contain_btn {
    display: flex;
-   align-items: center;
    justify-content: center;
 }
 
-.btn_contact > span {
-   position: relative;
-}
 .icon_btn {
    position: absolute;
    right: 0;
@@ -74,14 +78,15 @@
 /* -----ANIMATED ---BTN-COLOR----------- */
 
 .btn_contact {
+   position: relative;
    display: grid;
    align-items: center;
    font-size: 24px;
    color:white;
-   margin-top: 30px;
    background-color: var(--btn-color);
    border:none;
-   width: 40%;
+   width: auto;
+   padding-inline: 8%;
    cursor: pointer;
    border-radius: 10px;
    border:3px solid var(--border-color);
@@ -102,3 +107,20 @@
 
 
 
+/* ---------------MEDIA QUERY 900PX */
+
+@media (max-width: 900px) {
+   .text_style > h1 {
+      font-size: 50px;
+   }
+   .description {
+      font-size: 24px;
+   }
+}
+
+
+@media (max-width:650px){
+   .text_style > h1 {
+      font-size: 43px;
+   }
+}
