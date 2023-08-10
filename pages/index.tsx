@@ -4,6 +4,9 @@ import { Home, Navbar, Perfil, Projects, Skills, Education, Contact, Footer } fr
 const App = () => {
   return (
     <div className="container">
+      <Head>
+        <title>Ernesto_dev</title>
+      </Head>
       <Navbar/>
       <Home/>
       <Perfil/>
