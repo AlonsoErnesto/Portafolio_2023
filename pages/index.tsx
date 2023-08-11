@@ -1,4 +1,5 @@
 import { Home, Navbar, Perfil, Projects, Skills, Education, Contact, Footer } from '../components';
+import Head from 'next/head';
 
 
 const App = () => {
